@@ -67,7 +67,7 @@ class InfiniteDeck:
 class Player:
     def __init__(self, **kwargs):
         keys = kwargs.keys()
-        self.cards = kwargs['keys'] if 'cards' in keys else []
+        self.cards = kwargs['keys'] if 'pixel_cards' in keys else []
         self.money = kwargs['money'] if 'money' in keys else -1
 
 
