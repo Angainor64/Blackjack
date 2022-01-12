@@ -1,4 +1,4 @@
-import random
+import Crypto.Random.random as random
 from typing import Union, List
 import logging
 
