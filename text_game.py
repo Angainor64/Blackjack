@@ -88,7 +88,7 @@ class BasicStrategyGame:
         print(f'Dealer has {dealer}')
         print(f'You have {player[0]} and {player[1]}')
         guess = input('What is the correct play?\n').lower()
-        if guess == 'end' or guess == 'stop':
+        if guess in ['end', 'stop', 'quit']:
             raise EndGameException('End the game')
         if correct[:2] == guess[:2]:
             print('Correct!')
